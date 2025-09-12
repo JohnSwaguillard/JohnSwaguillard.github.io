@@ -1,25 +1,37 @@
 body {
-    background: #000000;
-    color: #ffffff;
-    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+    font-family: "Orbitron", Poppins, sans-serif;
 }
-.bg-primary {
-    background-color: #1e40af !important;
+.hero {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="500" cy="500" r="1" fill="white" opacity="0.1"/></svg>')
+        repeat;
+}
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle,
+        rgba(0, 68, 40, 0.3) 0%,
+        transparent 70%
+    );
+    z-index: 1;
+}
+.orbit-img {
+    filter: drop-shadow(0 0 20px rgba(30, 64, 175, 0.5));
+}
+.orbit-card {
+    border: 1px solid rgba(30, 64, 175, 0.3);
+    backdrop-filter: blur(0);
+    background: rgba(0, 0, 0, 0.7);
+} /* Removed blur, added dark bg for contrast */
+.connect {
+    right: 5%;
+    max-width: 250px;
 }
 .btn-primary {
     background: #1e40af;
-    border: 2px solid #1e40af;
-    border-radius: 0;
-}
-.btn-outline-light {
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 0;
-}
-.btn-outline-light:hover {
-    background-color: #ffffff;
-    color: #000000;
-}
-hr {
-    border-top: 1px solid #ffffff;
+    border: 1px solid #1e40af;
 }

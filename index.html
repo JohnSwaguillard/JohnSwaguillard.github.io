@@ -15,242 +15,290 @@
             rel="stylesheet"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=SF+Pro+Display:wght@400;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap"
             rel="stylesheet"
         />
-        <!-- SF Pro + Inter fallback -->
+        <!-- Lighter Orbitron + Poppins -->
     </head>
-    <body class="bg-white text-black">
-        <!-- Minimal Header: Small name top-left desktop, centered mobile -->
-        <header
-            class="position-fixed top-0 start-0 p-3 d-md-block d-none"
-            style="
-                z-index: 1000;
-                font-size: 0.875rem;
-                font-family: &quot;SF Pro Display&quot;, Inter, sans-serif;
-                font-weight: 600;
-            "
+    <body class="bg-dark text-white">
+        <!-- Hero: Full-width with static headshot -->
+        <section
+            class="hero position-relative overflow-hidden min-vh-100 d-flex align-items-center"
         >
-            John Aguillard
-        </header>
-        <header
-            class="d-md-none text-center p-3 pt-5"
-            style="
-                font-size: 0.875rem;
-                font-family: &quot;SF Pro Display&quot;, Inter, sans-serif;
-                font-weight: 600;
-            "
-        >
-            John Aguillard
-        </header>
-
-        <div class="hero pt-5 pb-4">
-            <div class="container">
+            <div class="container position-relative z-2">
                 <div class="row align-items-center">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
+                        <h1
+                            class="display-1 fw-normal mb-4"
+                            style="
+                                font-family:
+                                    &quot;Orbitron&quot;, Poppins, sans-serif;
+                                font-weight: 600;
+                            "
+                        >
+                            I'm John.<br />I build radios and robots.
+                        </h1>
+                        <p
+                            class="lead fs-5"
+                            style="
+                                font-family: &quot;Poppins&quot;, sans-serif;
+                                font-weight: 300;
+                            "
+                        >
+                            RF & Robotics Engineer
+                        </p>
+                        <p
+                            class="lead fs-5"
+                            style="
+                                font-family: &quot;Poppins&quot;, sans-serif;
+                                font-weight: 300;
+                            "
+                        >
+                            SpaceX, Saronic, Johns Hopkins Alum
+                        </p>
+                        <p
+                            class="lead fs-5 mb-0"
+                            style="
+                                font-family: &quot;Poppins&quot;, sans-serif;
+                                font-weight: 300;
+                            "
+                        >
+                            Austin, Texas
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
                         <img
                             src="images/headshot.jpg"
-                            alt="John Aguillard, Engineer"
-                            class="img-fluid border"
+                            alt="John Aguillard"
+                            class="img-fluid rounded-circle"
                             style="
-                                max-width: 250px;
-                                border: 2px solid #000000;
-                                border-radius: 0;
+                                max-width: 300px;
+                                filter: drop-shadow(
+                                    0 0 20px rgba(30, 64, 175, 0.5)
+                                );
                             "
                         />
                     </div>
-                    <div class="col-md-8">
-                        <p class="lead fs-2 fw-bold">
-                            I'm John Aguillard, an Engineer Building the Future
-                            of Space and Defense Tech.
-                        </p>
-                    </div>
                 </div>
-                <!-- Full-edge sharp divider -->
-                <hr
-                    class="border-1 border-black my-4"
-                    style="
-                        width: 100vw;
-                        position: relative;
-                        left: 50%;
-                        right: 50%;
-                        margin-left: -50vw;
-                        margin-right: -50vw;
-                    "
-                />
             </div>
-        </div>
-
-        <section class="bio py-5">
-            <div class="container">
-                <h2
-                    class="fw-bold h4"
-                    style="
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
-                    "
-                >
-                    About
-                </h2>
-                <p
-                    class="fs-5"
-                    style="
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
-                    "
-                >
-                    RF and robotics engineer driving innovations in space and
-                    defense. With hands-on experience at SpaceX, Saronic, and
-                    Johns Hopkins, I specialize in antenna systems, autonomous
-                    vessels, and intelligent sensors—building tech that secures
-                    the future. Eager for collaborations, contracts, or roles
-                    where I can pioneer next-gen hardware. Based in [Your
-                    Location].
-                </p>
-                <!-- Partial divider (container-bound) -->
-                <hr class="border-1 border-black my-4" style="width: 100%" />
-            </div>
+            <div class="gradient-overlay"></div>
         </section>
 
+        <!-- Experience: Floating cards with readable text -->
         <section class="experience py-5">
             <div class="container">
                 <h2
-                    class="fw-bold h4"
+                    class="text-center fw-normal mb-5"
                     style="
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
+                        font-family: &quot;Orbitron&quot;, Poppins, sans-serif;
+                        font-size: 2.5rem;
+                        font-weight: 600;
                     "
                 >
-                    Experience Highlights
+                    Experience
                 </h2>
-                <ul class="list-unstyled fs-5">
-                    <li
-                        class="mb-3"
-                        style="
-                            font-family:
-                                &quot;SF Pro Display&quot;, Inter, sans-serif;
-                        "
-                    >
-                        <i class="fas fa-ship me-2 text-black"></i>Product
-                        Manager at Saronic: Spearheaded the development roadmap
-                        of autonomous surface vessels to revolutionize America's
-                        maritime defense.
-                    </li>
-                    <li
-                        class="mb-3"
-                        style="
-                            font-family:
-                                &quot;SF Pro Display&quot;, Inter, sans-serif;
-                        "
-                    >
-                        <i class="fas fa-rocket me-2 text-black"></i>RF/Antenna
-                        Engineer at SpaceX: Developed antennas and
-                        communications systems for Starshield and Starlink.
-                    </li>
-                    <li
-                        class="mb-3"
-                        style="
-                            font-family:
-                                &quot;SF Pro Display&quot;, Inter, sans-serif;
-                        "
-                    >
-                        <i class="fas fa-broadcast-tower me-2 text-black"></i
-                        >Robotics & RF Engineer at Johns Hopkins APL: Pioneered
-                        design of new, intelligent sensors and communication
-                        techniques.
-                    </li>
-                    <li
-                        class="mb-3"
-                        style="
-                            font-family:
-                                &quot;SF Pro Display&quot;, Inter, sans-serif;
-                        "
-                    >
-                        <i class="fas fa-graduation-cap me-2 text-black"></i>MS
-                        in Electrical and Computer Engineering (Johns Hopkins,
-                        ongoing), BS in Electrical Engineering (Louisiana Tech,
-                        2019).
-                    </li>
-                </ul>
-                <hr class="border-1 border-black my-4" style="width: 100%" />
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div
+                            class="card h-100 bg-dark border-0 text-center p-4 orbit-card"
+                            style="transition: transform 0.3s; color: #ffffff"
+                        >
+                            <i class="fas fa-ship fa-3x text-primary mb-3"></i>
+                            <h3
+                                class="fw-normal mb-2"
+                                style="
+                                    color: #1e40af;
+                                    font-family:
+                                        &quot;Orbitron&quot;, Poppins,
+                                        sans-serif;
+                                    font-weight: 600;
+                                "
+                            >
+                                Saronic
+                            </h3>
+                            <p
+                                class="fs-5"
+                                style="
+                                    font-family:
+                                        &quot;Poppins&quot;, sans-serif;
+                                    font-weight: 300;
+                                "
+                            >
+                                Product Manager
+                            </p>
+                            <p
+                                style="
+                                    font-family:
+                                        &quot;Poppins&quot;, sans-serif;
+                                    font-weight: 300;
+                                "
+                            >
+                                Spearheaded the development roadmap of
+                                autonomous surface vessels to revolutionize
+                                America's maritime defense.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div
+                            class="card h-100 bg-dark border-0 text-center p-4 orbit-card"
+                            style="transition: transform 0.3s; color: #ffffff"
+                        >
+                            <i
+                                class="fas fa-rocket fa-3x text-primary mb-3"
+                            ></i>
+                            <h3
+                                class="fw-normal mb-2"
+                                style="
+                                    color: #1e40af;
+                                    font-family:
+                                        &quot;Orbitron&quot;, Poppins,
+                                        sans-serif;
+                                    font-weight: 600;
+                                "
+                            >
+                                SpaceX
+                            </h3>
+                            <p
+                                class="fs-5"
+                                style="
+                                    font-family:
+                                        &quot;Poppins&quot;, sans-serif;
+                                    font-weight: 300;
+                                "
+                            >
+                                RF/Antenna Engineer
+                            </p>
+                            <p
+                                style="
+                                    font-family:
+                                        &quot;Poppins&quot;, sans-serif;
+                                    font-weight: 300;
+                                "
+                            >
+                                Developed antennas and communications systems
+                                for Starshield and Starlink.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div
+                            class="card h-100 bg-dark border-0 text-center p-4 orbit-card"
+                            style="transition: transform 0.3s; color: #ffffff"
+                        >
+                            <i
+                                class="fas fa-broadcast-tower fa-3x text-primary mb-3"
+                            ></i>
+                            <h3
+                                class="fw-normal mb-2"
+                                style="
+                                    color: #1e40af;
+                                    font-family:
+                                        &quot;Orbitron&quot;, Poppins,
+                                        sans-serif;
+                                    font-weight: 600;
+                                "
+                            >
+                                Johns Hopkins APL
+                            </h3>
+                            <p
+                                class="fs-5"
+                                style="
+                                    font-family:
+                                        &quot;Poppins&quot;, sans-serif;
+                                    font-weight: 300;
+                                "
+                            >
+                                Robotics & RF Engineer
+                            </p>
+                            <p
+                                style="
+                                    font-family:
+                                        &quot;Poppins&quot;, sans-serif;
+                                    font-weight: 300;
+                                "
+                            >
+                                Pioneered design of new, intelligent sensors and
+                                communication techniques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Connect: Fixed sidebar-like bar -->
         <section
-            class="links py-5"
-            style="background-color: #000000; color: #ffffff"
+            class="connect position-fixed end-0 top-50 translate-middle-y p-3"
+            style="z-index: 1000"
         >
-            <div class="container text-center">
-                <h2
-                    class="fw-bold h4"
+            <div
+                class="bg-dark border-start border-primary p-3 rounded-start"
+                style="width: 200px"
+            >
+                <h5
+                    class="fw-normal mb-3"
                     style="
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
+                        font-family: &quot;Orbitron&quot;, Poppins, sans-serif;
+                        font-weight: 600;
                     "
                 >
                     Connect
-                </h2>
+                </h5>
                 <a
                     href="mailto:john@johnaguillard.com"
-                    class="btn btn-outline-light m-2"
+                    class="btn btn-outline-primary w-100 mb-2"
                     style="
                         border-radius: 0;
-                        border: 2px solid #ffffff;
-                        color: #ffffff;
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
+                        font-family: &quot;Poppins&quot;, sans-serif;
+                        font-weight: 300;
                     "
-                    >Email Me</a
+                    ><i class="fas fa-envelope me-2"></i>Email</a
                 >
                 <a
                     href="https://www.linkedin.com/in/johnaguillard"
-                    class="btn btn-outline-light m-2"
+                    class="btn btn-outline-primary w-100 mb-2"
                     style="
                         border-radius: 0;
-                        border: 2px solid #ffffff;
-                        color: #ffffff;
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
+                        font-family: &quot;Poppins&quot;, sans-serif;
+                        font-weight: 300;
                     "
                     target="_blank"
-                    >LinkedIn</a
+                    ><i class="fab fa-linkedin me-2"></i>LinkedIn</a
                 >
                 <a
                     href="https://github.com/JohnSwaguillard"
-                    class="btn btn-outline-light m-2"
+                    class="btn btn-outline-primary w-100 mb-2"
                     style="
                         border-radius: 0;
-                        border: 2px solid #ffffff;
-                        color: #ffffff;
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
+                        font-family: &quot;Poppins&quot;, sans-serif;
+                        font-weight: 300;
                     "
                     target="_blank"
-                    >GitHub</a
+                    ><i class="fab fa-github me-2"></i>GitHub</a
                 >
                 <a
                     href="projects.html"
-                    class="btn btn-outline-light m-2"
+                    class="btn btn-outline-primary w-100"
                     style="
                         border-radius: 0;
-                        border: 2px solid #ffffff;
-                        color: #ffffff;
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
+                        font-family: &quot;Poppins&quot;, sans-serif;
+                        font-weight: 300;
                     "
-                    >View Projects (Coming Soon)</a
+                    >Projects</a
                 >
-                <hr class="border-1 border-white my-4" style="width: 100%" />
             </div>
         </section>
 
+        <!-- Contact: Overlay form -->
         <section class="contact py-5">
             <div class="container">
                 <h2
-                    class="fw-bold h4"
+                    class="text-center fw-normal mb-5"
                     style="
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
+                        font-family: &quot;Orbitron&quot;, Poppins, sans-serif;
+                        font-size: 2.5rem;
+                        font-weight: 600;
                     "
                 >
                     Contact for Opportunities
@@ -258,69 +306,105 @@
                 <form
                     action="https://formspree.io/f/your_form_id"
                     method="POST"
+                    class="row g-3 justify-content-center"
                 >
-                    <div class="mb-3">
+                    <div class="col-md-6">
                         <input
                             type="email"
                             name="email"
                             class="form-control"
                             placeholder="Your Email"
                             required
+                            style="
+                                font-family: &quot;Poppins&quot;, sans-serif;
+                                font-weight: 300;
+                            "
                         />
                     </div>
-                    <div class="mb-3">
+                    <div class="col-md-6">
+                        <input
+                            type="text"
+                            name="_subject"
+                            class="form-control"
+                            placeholder="Subject"
+                            required
+                            style="
+                                font-family: &quot;Poppins&quot;, sans-serif;
+                                font-weight: 300;
+                            "
+                        />
+                    </div>
+                    <div class="col-12">
                         <textarea
                             name="message"
                             class="form-control"
                             placeholder="Message"
-                            rows="3"
+                            rows="5"
                             required
+                            style="
+                                font-family: &quot;Poppins&quot;, sans-serif;
+                                font-weight: 300;
+                            "
                         ></textarea>
                     </div>
-                    <button
-                        type="submit"
-                        class="btn"
-                        style="
-                            background-color: #000000;
-                            color: #ffffff;
-                            border-radius: 0;
-                            border: 2px solid #000000;
-                            font-family:
-                                &quot;SF Pro Display&quot;, Inter, sans-serif;
-                        "
-                    >
-                        Send
-                    </button>
+                    <div class="col-12 text-center">
+                        <button
+                            type="submit"
+                            class="btn btn-primary px-5"
+                            style="
+                                border-radius: 0;
+                                font-family:
+                                    &quot;Orbitron&quot;, Poppins, sans-serif;
+                                font-weight: 600;
+                            "
+                        >
+                            Launch Conversation
+                        </button>
+                    </div>
                 </form>
                 <p
-                    class="mt-3"
+                    class="text-center mt-3"
                     style="
-                        font-family:
-                            &quot;SF Pro Display&quot;, Inter, sans-serif;
+                        font-family: &quot;Poppins&quot;, sans-serif;
+                        font-weight: 300;
                     "
                 >
-                    Or email directly:
-                    <a
-                        href="mailto:john@johnaguillard.com"
-                        style="color: #000000"
+                    Or reach out:
+                    <a href="mailto:john@johnaguillard.com" class="text-primary"
                         >john@johnaguillard.com</a
                     >
                 </p>
             </div>
         </section>
 
-        <footer
-            class="py-3 text-center"
-            style="
-                background-color: #ffffff;
-                color: #000000;
-                font-family: &quot;SF Pro Display&quot;, Inter, sans-serif;
-            "
-        >
-            <div class="container">&copy; 2025 John Aguillard</div>
+        <footer class="py-4 text-center bg-black">
+            <div
+                class="container"
+                style="
+                    font-family: &quot;Poppins&quot;, sans-serif;
+                    font-weight: 300;
+                "
+            >
+                &copy; 2025 John Aguillard | Austin, Texas
+            </div>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
+        <script>
+            // Hover animation for cards only
+            document.addEventListener("DOMContentLoaded", () => {
+                const cards = document.querySelectorAll(".orbit-card");
+                cards.forEach((card) => {
+                    card.addEventListener(
+                        "mouseenter",
+                        () => (card.style.transform = "translateY(-10px)"),
+                    );
+                    card.addEventListener(
+                        "mouseleave",
+                        () => (card.style.transform = "translateY(0)"),
+                    );
+                });
+            });
+        </script>
     </body>
 </html>
