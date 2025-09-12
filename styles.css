@@ -26,7 +26,7 @@ body {
     border: 1px solid rgba(30, 64, 175, 0.3);
     backdrop-filter: blur(0);
     background: rgba(0, 0, 0, 0.7);
-} /* Removed blur, added dark bg for contrast */
+}
 .connect {
     right: 5%;
     max-width: 250px;
